@@ -15,5 +15,13 @@ void TestLib::display(int a) {
 }
 
 extern "C" {
+  TestLib obj;
 
+  void display() {
+    obj.display();
+  }
+
+  void display_int() {
+    obj.display(2);
+  }
 }
